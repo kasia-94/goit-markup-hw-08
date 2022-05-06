@@ -1,0 +1,93 @@
+.team-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team {
+    background-color: $team-background-color;
+  }
+
+  .team-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .team-list-li {
+    background-color: $white-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+
+  .team-list-name {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+  
+    color: $main-text-color;
+  }
+
+  .team-list-position {
+    text-align: center;
+  
+    font-size: 16px;
+    line-height: 1.19;
+  
+    color: $secondary-text-color;
+  }
+  
+  .team-name-position {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .team-social-list {
+    @extend %flex-centered;
+    margin-top: 16px;
+  }
+  
+  .team-social-li {
+    @extend %flex-centered;
+    
+    &:not(:last-child) {
+    margin-right: 10px;
+  }}
+  
+  .team-social-link {
+    width: 44px;
+    height: 44px;
+    color: $white-color;
+    border-radius: 50%;
+  
+    transition: background-color 250ms $cubic-action,
+    color 250ms $cubic-action;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $accent-color;
+      border-radius: 50%;
+    }
+  }
+  
+  .team-list-icon {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    fill: $client-color;
+    transition: fill 250ms $cubic-action;
+
+    &:hover,
+    &:focus {
+      fill: currentColor;
+  }}

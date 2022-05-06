@@ -1,0 +1,49 @@
+  .client-title {
+    margin-bottom: 50px;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  .client-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .client-li {
+    padding: auto;
+    vertical-align: middle;
+
+   &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  .client-link {
+    @extend %flex-centered;
+    width: 170px;
+    height: 92px;
+  
+    color: $client-color;
+    @include border($client-color);
+    border-radius: 4px;
+    transition: background-color 250ms $cubic-action,
+    color 250ms $cubic-action;
+
+      &:hover,
+      &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+      @include border($accent-color);
+    }
+  }
+  
+  .icon-li {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+  }
