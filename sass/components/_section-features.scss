@@ -1,47 +1,81 @@
-.features {
-  background-color: $white-color;
-}
-
-.features-list {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+  .features {
+    background-color: $white-color;
   }
-  
-.features-list__li {
-    width: 270px;
-    
-    &:not(:last-child)  {
-      margin-right: 30px;
+
+  .features-list {
+    @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    padding: 0;
     }
   }
+
+    .features-list__li {
+        width: 450px;
+
+        &:not(:last-child)  {
+          @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+          }
+        }
+        @media screen and (min-width:768px) {
+          width: calc((100% - 2 * 30px) / 2);
+          margin: 15px;
+        }
+
+    }
+
+    .features-icon {
+      @extend %flex-centered;
+        width: 450px;
+        height: 120px;
+
+        margin-bottom: 30px;
+        background-color: $main-buttom;
+
+        &__image {
+          width: 70px;
+          height: 70px;
+        }
+
+        @media screen and (min-width:768px) {
+          width: 354px;
+        }
+    }
+
+  .features-list__title {
+      margin-bottom: 10px;
+      
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      text-transform: uppercase;
+      text-align: center;
+
+      @media screen and (min-width:768px) {
+        text-align: start;
+      }
+    }
   
-.features-list__title {
-    margin-bottom: 10px;
+  .features-list__description {
+      font-size: 14px;
+      line-height: 1.71;
     
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-  }
-
-.features-list__description {
-    font-size: 14px;
-    line-height: 1.71;
+      color: $secondary-text-color;
+    }
   
-    color: $secondary-text-color;
-  }
+//    .features-icon {
+//     width: 270px;
+//     height: 120px;
+// }
 
- .features-icon {
-  @extend %flex-centered;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: $main-buttom;
+    // .features-list__li {
+    //   width: 270px;
+    // &:not(:last-child)  {
+    //   margin-right: 30px;
+    // }
+    // }
 
-  &__image {
-    width: 70px;
-    height: 70px;
-  }
-}
-  
+
+
