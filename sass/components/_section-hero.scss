@@ -1,6 +1,6 @@
   .main-index {
     height: 400px;
-    width: 480px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
@@ -20,7 +20,7 @@
     }
 
     @media screen and (min-width:768px) {
-      width: 768px;
+      max-width: 768px;
       background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-tablet.jpg);
 
@@ -32,6 +32,10 @@
 
     @media screen and (min-width:1200px) {
       max-width: 1600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      min-height: 600px;
+
       background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-desktop.jpg);
 
@@ -48,8 +52,12 @@
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: $white-color;
+
+    @media screen and (min-width:1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   .button-index {
@@ -78,29 +86,3 @@
     background-color: $bottom-index-active;
   }
   }
-
-
-// .main-index {
-
-      // padding-top: 200px;
-      // padding-bottom: 200px;
-    
-  //     font-size: 44px;
-  //     line-height: 1.36;
-    
-  //     min-height: 600px;
-  //     max-width: 1600px;
-      // background-image: linear-gradient(
-      //     to right,
-      //     rgba(47, 48, 58, 0.4),
-      //     rgba(47, 48, 58, 0.4)
-      //   ),
-      //   url(../images/hero.jpg);
-
-    // }
-
-    // .main-index-title {
-    //   font-size: 44px;
-    //   line-height: 1.36;
-
-    // }
