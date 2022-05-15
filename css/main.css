@@ -1,4 +1,4 @@
-.footer-social-list, .button-submit, .modal-form-button, .button-modal, .features-icon, .client-link, .team-social-list, .team-social-li {
+.auth-nav .link, .footer-social-list, .button-submit, .modal-form-button, .button-modal, .features-icon, .client-link, .team-social-list, .team-social-li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,6 +311,9 @@ img {
     margin-left: auto;
     line-height: 1.14;
     font-size: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -347,8 +350,10 @@ img {
   }
 }
 
-.phone {
-  margin-top: 0;
+@media screen and (max-width: 1199px) {
+  .phone {
+    margin-top: 0;
+  }
 }
 
 .auth-nav .link {

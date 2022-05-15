@@ -112,6 +112,7 @@
     margin-left: auto;
     line-height: 1.14;
     font-size: 14px;
+    align-items: center;
     }
   }
 
@@ -141,11 +142,13 @@
     }
 
     .phone {
-      margin-top: 0;
+      @media screen and (max-width:1199px) {
+        margin-top: 0;
+      }
     }
 
   .auth-nav .link {
-    // @extend %flex-centered;
+    @extend %flex-centered;
     color: $secondary-text-color;
     font-style: normal;
     transition: color 250ms $cubic-action;
