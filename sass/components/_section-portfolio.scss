@@ -107,7 +107,8 @@
   }
   
   .portfolio-box {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     transition: box-shadow 250ms $cubic-action;
 
@@ -158,10 +159,4 @@
     border-right: 1px solid $portfolio-border-color;
     border-bottom: 1px solid $portfolio-border-color;
     border-left: 1px solid $portfolio-border-color;
-  }
-
-  @media screen and (min-width:768px) and (max-width:1199px) {
-    .tablet-m-b {
-      margin-bottom: 36px;
-    }
   }
