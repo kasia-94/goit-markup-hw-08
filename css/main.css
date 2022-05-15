@@ -1,4 +1,4 @@
-.auth-nav .link, .footer-social-list, .button-submit, .modal-form-button, .button-modal, .features-icon, .client-link, .team-social-list, .team-social-li {
+.footer-social-list, .button-submit, .modal-form-button, .button-modal, .features-icon, .client-link, .team-social-list, .team-social-li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,6 +277,9 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) {
