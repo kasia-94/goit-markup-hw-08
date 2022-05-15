@@ -333,7 +333,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .auth-nav__li:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -342,6 +342,10 @@ img {
     margin-bottom: auto;
     margin-right: 50px;
   }
+}
+
+.phone {
+  margin-top: 0;
 }
 
 .auth-nav .link {

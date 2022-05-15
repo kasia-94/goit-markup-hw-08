@@ -131,12 +131,16 @@
 
     .auth-nav__li:not(:last-child) {
       @media screen and (min-width:768px) {
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
       @media screen and (min-width:1200px) {
         margin-bottom: auto;
         margin-right: 50px;
       }
+    }
+
+    .phone {
+      margin-top: 0;
     }
 
   .auth-nav .link {
