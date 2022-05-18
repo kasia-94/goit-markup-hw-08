@@ -1,6 +1,9 @@
 .team {
-  min-width: 480px;
+  width: 100%;
   background-color: $team-background-color;
+  @media screen and (min-width:480px) {
+    min-width: 480px;
+  }
 }
 
 .team-title {

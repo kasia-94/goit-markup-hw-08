@@ -36,6 +36,7 @@
 }
 
 .menu-container {
+  width: 100%;
   position: fixed;
   z-index: 999;
   min-width: 100vw;
@@ -59,9 +60,15 @@
   }
 }
 
+.menu-social {
+  width: 100%;
+}
+
 .menu-social-list {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   color: $accent-color;
 
   & .link {
@@ -71,10 +78,14 @@
 
 .menu-social-link {
   position: relative;
-  font-size: 18px;
+  font-size: 3vw;
   line-height: 1.22;
   color: $accent-color;
   margin-right: 10px;
+
+  @media screen and (min-width:480px) {
+    font-size: 18px;
+  }
 
   &:not(:last-child) {
     padding-right: 10px;

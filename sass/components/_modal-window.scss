@@ -30,9 +30,15 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $cubic-action;
 
-    min-width: 450px; 
-    min-height: 609px;
-    padding: 8px; 
+    @media screen and (max-width:479px) {
+      width: calc(100% - 10px);
+      padding: 8px;
+    }
+    @media screen and (min-width:480px) {
+      min-width: 450px; 
+      min-height: 609px;
+      padding: 8px; 
+    }
 
     @media screen and (min-width:1200px) {
       min-width: 528px;
