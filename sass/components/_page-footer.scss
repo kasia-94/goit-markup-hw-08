@@ -112,8 +112,8 @@
       margin-right: 10px;
     }
     
-    &:hover,
-    &:focus {
+    &:focus, &:hover
+     {
       @extend .footer-social-li;
       background-color: $accent-color;
     }
@@ -124,11 +124,6 @@
     height: 20px;
     margin: 12px;
     fill: $white-color;
-
-    &:hover,
-    &:focus {
-     @extend .footer-list-icon;
-    }
   }
 
   .footer-newsletter {

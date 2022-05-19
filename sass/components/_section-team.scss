@@ -114,7 +114,7 @@
     fill: $client-color;
     transition: fill 250ms $cubic-action;
 
-    &:hover,
-    &:focus {
+    .team-social-link:hover &,
+    .team-social-link:focus &{
       fill: currentColor;
   }}
